@@ -1,0 +1,104 @@
+.c-container {
+    justify-content: space-between;
+}
+
+.c-container>div {
+    flex: 1;
+}
+
+.c-right img {
+    width: 100%;
+}
+
+.c-right {
+    width: 100%;
+}
+
+.c-right .image-container{
+    scale: 1.1;
+    /* margin-left: 7rem; */
+    margin: auto;
+    border: 8px solid rgba(128, 128, 128, .14);
+
+}
+
+.c-left {
+    gap: 0.5rem;
+}
+
+.contactModes {
+    margin-top: 2rem;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.contactModes .row {
+    gap: 1.5rem;
+}
+
+.mode {
+    width: 16rem;
+    padding: 1rem;
+    border-radius: 5px;
+    gap: 1rem;
+    border: 1px solid rgba(128, 128, 128, .14);
+    transition: .3s ease-in;
+}
+
+.mode .icon{
+    scale: 1.2;
+}
+
+.detail{
+    margin-left: 1.5rem;
+}
+
+.detail>:nth-child(1){
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.mode:hover {
+    scale: 1.07;
+    box-shadow: 0 1rem 2rem rgba(136, 160, 255, .25);
+}
+
+.mode>.button {
+    width: 100%;
+    background: var(--lightBlue);
+    color: var(--blue);
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.mode>.button:hover {
+    background: var(--blue-gradient);
+    color: white;
+    cursor: pointer;
+    scale: .92;
+    border-radius: 10px;
+}
+
+@media (max-width:1024px) {
+    .contactModes{
+        width: 100%;
+    }
+
+    .mode{
+        width: 40vw;
+    }
+}
+
+@media (max-width:450px) {
+    .mode{
+        width: 85vw;
+    }
+
+    .contactModes{
+        flex-wrap: wrap;
+    }
+
+    .c-container .image-container{
+        scale: .9;
+    }
+}

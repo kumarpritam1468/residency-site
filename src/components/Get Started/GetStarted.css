@@ -1,0 +1,27 @@
+.inner-container{
+    gap: 1.5rem;
+    background: #4161df;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 6px solid #5d77d6;
+    text-align: center;
+    flex-direction: column;
+}
+
+.inner-container>:nth-child(1){
+    color: white;
+}
+
+.inner-container>:nth-child(2){
+    color: rgb(225, 225, 225);
+}
+
+.inner-container .button{
+    background: rgba(255, 255, 255, 0.112);
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.inner-container .button:hover{
+    scale: 1.1;
+}

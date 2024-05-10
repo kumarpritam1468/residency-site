@@ -1,0 +1,29 @@
+.f-container{
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.f-left{
+    gap: 1rem;
+}
+
+.f-right{
+    gap: 1.2rem;
+}
+
+.f-links{
+    gap: .8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+@media (max-width:808px) {
+    .f-container,
+    .f-left,
+    .f-right-text,
+    .f-right{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

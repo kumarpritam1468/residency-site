@@ -1,0 +1,18 @@
+.comp-wrapper{
+    padding: 1.5rem 3rem;
+}
+
+.comp-container{
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.comp-container img{
+    width: 8rem;
+}
+
+@media (max-width:777px) {
+    .comp-wrapper{
+        display: none;
+    }
+}

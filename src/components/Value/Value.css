@@ -1,0 +1,89 @@
+.v-container .image-container{
+    border: 8px solid rgb(232 232 232/93%);
+    scale: 1.08;
+}
+
+.v-container>div{
+    flex:1
+}
+
+.v-right{
+    gap: .5rem;
+}
+
+.accordion{
+    margin-top: 1rem;
+    border: none;
+}
+
+.accordionItem{
+    background: white;
+    scale: 1.05;
+    border: 1px solid rgba(128, 128, 128, .14);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.accordion .primaryText{
+    font-size: 1.2rem;
+}
+
+.accordion .secondaryText{
+    font-size: .7rem;
+}
+
+.accordionItemButton{
+    display: flex;
+    gap: 1rem;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.icon{
+    background: #eeeeff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.icon svg{
+    fill: var(--blue);
+}
+
+.accordionItemPanel{
+    padding: 1rem;
+    animation: fadein .3s ease-in;
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.expanded{
+    box-shadow: 0 1rem 2rem rgba(136, 160, 255, .25);
+}
+
+.collapsed{
+    box-shadow: none;
+}
+
+@media (max-width:960px) {
+    .v-container .image-container{
+        scale: .9;
+    }
+}
+
+@media (max-width:851px) {
+    .v-container{
+        flex-direction: column;
+    }
+}
